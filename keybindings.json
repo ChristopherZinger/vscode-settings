@@ -1,0 +1,50 @@
+// Place your key bindings in this file to override the defaults
+[
+  // Terminal
+  {
+    "key": "shift+t",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "shift+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+l",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+h",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+
+  // File tree
+  {
+    "key": "shift+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "deleteFile",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceReadonly"
+  },
+  // {
+  //   "key": "shift+l",
+  //   "command": "workbench.action.focusActiveEditorGroup",
+  //   "when": "explorerViewletVisible && !inputFocus"
+  // },
+  {
+    "key": "shift+l",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "explorerViewletVisible && !inputFocus"
+  }
+]
