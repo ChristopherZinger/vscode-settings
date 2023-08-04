@@ -54,7 +54,17 @@
     // VSCode features
     {
       "before": ["leader", "f"],
-      "commands": ["workbench.action.quickFind"]
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "r"],
+      "commands": ["editor.action.rename"],
+      "when": "editorViewletOpen && vim.active"
+    },
+    {
+      "before": ["leader", "i"],
+      "commands": ["editor.action.revealDefinition"],
+      "when": "editorViewletOpen && vim.active"
     },
 
     // FILE TREE

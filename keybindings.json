@@ -3,7 +3,8 @@
   // Terminal
   {
     "key": "shift+t",
-    "command": "workbench.action.togglePanel"
+    "command": "workbench.action.togglePanel",
+    "when": "inputFocus && vim.mode != 'Insert'"
   },
   {
     "key": "shift+n",
