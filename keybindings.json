@@ -2,13 +2,18 @@
 [
   // Terminal
   {
-    "key": "shift+t",
-    "command": "workbench.action.togglePanel",
-    "when": "inputFocus && vim.mode != 'Insert'"
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "( editorTextFocus && vim.mode != 'Insert' ) || terminalFocus"
   },
   {
     "key": "shift+n",
     "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+q",
+    "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
   {
@@ -19,6 +24,11 @@
   {
     "key": "shift+h",
     "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+m",
+    "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalFocus"
   },
 
@@ -38,11 +48,6 @@
     "command": "deleteFile",
     "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceReadonly"
   },
-  // {
-  //   "key": "shift+l",
-  //   "command": "workbench.action.focusActiveEditorGroup",
-  //   "when": "explorerViewletVisible && !inputFocus"
-  // },
   {
     "key": "shift+l",
     "command": "workbench.action.toggleSidebarVisibility",
