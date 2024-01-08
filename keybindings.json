@@ -31,6 +31,11 @@
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalFocus"
   },
+  {
+    "key": "shift+backspace",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus && vim.mode != 'Insert' && canNavigateBack"
+  },
 
   // File tree
   {
