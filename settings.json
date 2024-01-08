@@ -78,5 +78,8 @@
     { "before": [">"], "commands": ["editor.action.indentLines"] },
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
-  "window.zoomLevel": 1
+  "editor.minimap.enabled": false,
+  "Notes.notesLocation": "/home/chris/projects",
+  "workbench.colorTheme": "Tomorrow Night Blue",
+  "diffEditor.ignoreTrimWhitespace": false
 }
